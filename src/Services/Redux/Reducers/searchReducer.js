@@ -8,7 +8,7 @@ const initialState = {
 }
 
 
-export default function (state = initialState, action) {
+export default function foo(state = initialState, action) {
     switch (action.type) {
         case SEARCH_MOVIE:
             return {
@@ -16,11 +16,25 @@ export default function (state = initialState, action) {
                 text: action.payload,
                 loading: false,
             }
-            
-           
-    
-        default: 
-            return state
+        // case FETCH_MOVIES:
+        //     return {
+        //         ...state,
+        //         movies: action.payload,
+        //         loading: false
+        //         };
+        // case FETCH_MOVIE:
+        //     return {
+        //         ...state,
+        //         movie: action.payload,
+        //         loading: false
+        //         };
+        // case LOADING:
+        //     return {
+        //         ...state,
+        //         loading: true
+        //         };
+              default:
+                return state;
            
     }
 }
