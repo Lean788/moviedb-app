@@ -9,10 +9,9 @@ export const searchMovie = text => dispatch => {
     });
 };
 
-console.log(APIkey);
 
 export const fetchMovies = text => dispatch => {
-    axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${APIkey}&query=${text}&language=es-ES&append_to_response=images&include_image_language=es,null`)
+    axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=${APIkey}&s=${text}`)
     .then(response => dispatch ({
         type: FETCH_MOVIES,
         payload: response.data
