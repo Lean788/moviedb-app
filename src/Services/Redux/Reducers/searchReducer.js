@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE } from "../Actions/types";
+import { FETCH_MOVIES, SEARCH_MOVIE } from "../Actions/types";
 
 const initialState = {
     text : '',
@@ -16,12 +16,12 @@ export default function foo(state = initialState, action) {
                 text: action.payload,
                 loading: false,
             }
-        // case FETCH_MOVIES:
-        //     return {
-        //         ...state,
-        //         movies: action.payload,
-        //         loading: false
-        //         };
+        case FETCH_MOVIES:
+            return {
+                ...state,
+                movies: action.payload,
+                loading: false
+                };
         // case FETCH_MOVIE:
         //     return {
         //         ...state,
