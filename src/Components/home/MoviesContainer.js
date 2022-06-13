@@ -14,8 +14,8 @@ export class MoviesContainer extends Component {
     null ;
     
     return (
-      <div className="row"> { content } </div>
-    )
+      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap'}} >{content}</div>
+    );
   }
 }
 

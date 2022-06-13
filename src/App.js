@@ -10,9 +10,11 @@ class App extends Component {
   render() { 
     return ( 
       <Provider store={store}>
-        <Navbar />
-        <Landing />
-        <Footer />
+        <div className="container">
+          <Navbar />
+          <Landing />
+          <Footer className="card-footer" />
+        </div>
       
       </Provider>
 
