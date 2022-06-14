@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# 3rd challenge [GeeksHubs Academy]
+## _Trello app_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+The challenge is to create an APP capable of interacting with the API endpoints provided by [OMDBapi].
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The application will allow us to search for and display titles with the following criteria: Title, year of creation, image (poster) of the film.
+- The application will allow this information to be displayed on different cards that will be displayed on the web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Assessment Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Correct use of React and Redux
+- Various search endpoints
+- Full README on Github
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dillinger uses a number of open source projects to work properly:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML5
+- ES6
+- React - Bootstrap 
+- REACT - REDUX
+- API [OMDBapi]
+- Git
 
-### `npm run eject`
+## Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project has the following structure:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+´´´
+moviedb-app/
+├─ node_modules/
+├─ public/
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ robots.txt
+│  ├─ manifest.json
+├─ src/
+│  ├─ assets/
+│  │     ├─
+│  ├─ components/
+│  │     ├─ home/
+│  │     │     ├─ Landing.js
+│  │     │     ├─ MovieCard.js
+│  │     │     ├─ MoviesContainer.js
+│  │     │     ├─ SearchForm.js
+│  │     ├─ layout/
+│  │     │     ├─ Footer.js
+│  │     │     ├─ Navbar.js
+│  │     │     ├─ spinner.gif
+│  │     │     ├─ Spinner.js
+│  │     ├─ APIKey.js
+│  │     ├─ Services/Redux
+│  │     │     ├─ Actions/
+│  │     │     │     ├─searchActions.js
+│  │     │     │     ├─index.js
+│  │     │     ├─ Reducers/
+│  │     │     │     ├─index.js
+│  │     │     │     ├─searchReducer.js
+│  ├─ index.css
+│  ├─ index.js
+│  ├─ app.css
+│  ├─ app.js
+├─ .gitignore
+├─ package-look.json
+├─ package.json
+├─ README.md
+´´´
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For this application the following dependencies have been required:
 
-## Learn More
+- @reduxjs/toolkit: v. 1.8.2
+- axios: v. 0.27.2
+- bootstrap: v. 4.6.0
+- react: v. 17.0.2
+- react-bootstrap: v. 1.5.2
+- react-dom: v. 17.0.2
+- react-redux: v. 8.0.2
+- redux: v. 4.2.0
+- redux-thunk: v. 2.4.1
+- web-vitals: v. 2.1.4
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the repository, then in a terminal run `npm install` to install the project dependencies. Finally open `moviedb-app` and compile the App `npm start`.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Free Software, learn and practices!**
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[OMDBapi]:<https://www.omdbapi.com/>
+[GeeksHubs Academy]:<https://github.com/GeeksHubsAcademy>
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
