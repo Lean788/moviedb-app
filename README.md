@@ -5,6 +5,10 @@
 
 The challenge is to create an APP capable of interacting with the API endpoints provided by [OMDBapi].
 
+## Deploy
+
+- This project is deployed in the next [link].
+
 ## Features
 
 - The application will allow us to search for and display titles with the following criteria: Title, year of creation, image (poster) of the film.
@@ -104,4 +108,5 @@ MIT
 
 [OMDBapi]:<https://www.omdbapi.com/>
 [GeeksHubs Academy]:<https://github.com/GeeksHubsAcademy>
+[link]:<https://moviedb-app-final-challenge.netlify.app/>
 
