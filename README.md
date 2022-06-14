@@ -37,7 +37,7 @@ Dillinger uses a number of open source projects to work properly:
 
 The project has the following structure:
 
-´´´
+```
 moviedb-app/
 ├─ node_modules/
 ├─ public/
@@ -75,7 +75,7 @@ moviedb-app/
 ├─ package-look.json
 ├─ package.json
 ├─ README.md
-´´´
+```
 
 ## Dependencies
 
