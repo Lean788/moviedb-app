@@ -1,5 +1,5 @@
-# 3rd challenge [GeeksHubs Academy]
-## _Trello app_
+# Final challenge [GeeksHubs Academy]
+## _Moviedb-app_
 
 
 
